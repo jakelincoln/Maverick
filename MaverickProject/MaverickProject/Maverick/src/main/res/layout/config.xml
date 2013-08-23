@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/PerferenceDialogLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PerferenceDialogLayout2"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/PerferenceDialogLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dip">
+        <TextView
+                android:id="@+id/PasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrator Password:"
+                android:layout_marginLeft="10dip">
+        </TextView>
+        <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/PasswordText"
+                android:inputType="textPassword"
+                android:layout_width="165dip"
+                android:layout_marginLeft="15dip"></EditText>
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/AdminLogin"
+                android:text="Login"
+                android:onClick="AdminLogin()"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PerferenceDialogLayout3"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/PerferenceDialogLayout2"
+            android:layout_alignParentLeft="true">
+        <TextView
+                android:id="@+id/URLLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL: "
+                android:layout_marginLeft="10dip">
+        </TextView>
+        <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/URLText"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:editable="false"
+                android:minWidth="100dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PreferenceDialogLayout5"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/PerferenceDialogLayout3"
+            android:layout_marginTop="30dip">
+        <TextView
+                android:id="@+id/RecruitersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recruiters: "
+                android:layout_marginLeft="10dip">
+        </TextView>
+        <Spinner
+                android:layout_height="wrap_content"
+                android:id="@+id/RecruitersSpinner"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dip">
+        </Spinner>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PreferenceDialogLayout5"
+            android:layout_alignParentLeft="true">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/SyncButton"
+            android:text="Synchronize"
+            android:clickable="false"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/Clear_DB"
+                android:text="Clear DB"
+                android:clickable="false"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

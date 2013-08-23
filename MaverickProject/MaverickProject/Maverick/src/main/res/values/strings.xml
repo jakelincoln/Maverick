@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maverick</string>
+    <string name="action_settings">Settings Menu</string>
+    <string name="action_Export">Export</string>
+    <string name="ConfigAlertDialogOK">Save</string>
+    <string name="ConfigAlertDialogCancel">Cancel</string>
+
+</resources>

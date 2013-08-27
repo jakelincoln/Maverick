@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Maverick/Maverick.iml" filepath="$PROJECT_DIR$/Maverick/Maverick.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaverickProject.iml" filepath="$PROJECT_DIR$/MaverickProject.iml" />
+    </modules>
+  </component>
+</project>
+

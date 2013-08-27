@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maverick</string>
+    <string name="action_settings">Settings Menu</string>
+    <string name="action_Export">Export</string>
+    <string name="ConfigAlertDialogOK">Save</string>
+    <string name="ConfigAlertDialogCancel">Cancel</string>
+    <string name="title_activity_config">ConfigActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="derPassword">8675309</string>
+    <string name="ConfigDialogTitle">Settings</string>
+    <string name="CloseButton">Save &amp; Close</string>
+</resources>

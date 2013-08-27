@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/PerferenceDialogLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PerferenceDialogLayout2"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/PerferenceDialogLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="25dip"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/PasswordLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrator Password:"
+                android:layout_marginLeft="10dip">
+        </TextView>
+        <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:id="@+id/PasswordText"
+                android:inputType="textPassword"
+                android:layout_gravity="center_horizontal"></EditText>
+        <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/AdminLogin"
+                android:text="Login"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PerferenceDialogLayout3"
+            android:layout_width="fill_parent"
+            android:layout_below="@+id/PerferenceDialogLayout2"
+            android:layout_alignParentLeft="false"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/URLLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="URL: "
+                android:layout_marginLeft="10dip"
+                android:layout_gravity="center">
+        </TextView>
+        <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/URLText"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:minWidth="100dp"
+                android:inputType="textUri"
+                android:layout_gravity="center">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:id="@+id/PreferenceDialogLayout5"
+            android:layout_width="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/PerferenceDialogLayout3"
+            android:layout_marginTop="30dip"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/RecruitersLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recruiter: "
+                android:layout_marginLeft="10dip">
+        </TextView>
+        <Spinner
+                android:layout_height="wrap_content"
+                android:id="@+id/RecruitersSpinner"
+                android:layout_width="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dip">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="PreferenceDialogLayout4"
+            android:minHeight="20dp"
+            android:gravity="center"
+            android:layout_below="@id/PreferenceDialogLayout5"
+            android:layout_above="@id/PreferenceLowerLayout">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SourceText"/>
+            </LinearLayout>
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PreferenceLowerLayout"
+            android:layout_below="@+id/PreferenceDialogLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+        <Button
+                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:id="@+id/SyncButton"
+                android:text="Synchronize"
+                android:clickable="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"/>
+
+        <Button
+                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:id="@+id/Clear_DB"
+                android:text="Clear DB"
+                android:clickable="false"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+        <Button
+                android:layout_height="100dp"
+                android:layout_width="150dp"
+                android:id="@+id/Close"
+                android:text="@string/CloseButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
